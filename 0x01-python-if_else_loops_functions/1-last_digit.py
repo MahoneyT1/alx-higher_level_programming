@@ -3,7 +3,7 @@ import random
 
 # assign a variable to hold the generated random number
 
-number = random.randint(-1000, 1000)
+number = random.randint(-10000, 10000)
 
 #check if number is the last digit of the total number
 
