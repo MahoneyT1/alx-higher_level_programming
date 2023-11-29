@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print('Abcdefghijklmnopqrstuvwxy'.format().lower(), end=" ")
+
+for i in range(ord('a'), ord('z') + 1):
+    print(chr(i).format().lower(), end=" ")
