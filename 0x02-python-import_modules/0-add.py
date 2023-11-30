@@ -4,4 +4,4 @@ import add_0
 a = 1
 b = 2
 #<a value> + <b value> = <add(a, b) value>
-print("{a} + {b} = ".format(), add_0.add(a, b))
+print(f"{a} + {b} = ", add_0.add(a, b))
