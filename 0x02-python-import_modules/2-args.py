@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import sys
 
 if __name__ == "__main__":
     """Print the number of and list of arguments."""
+    import sys
 
     argument = 0
     len_o_av = len(sys.argv) - 1
