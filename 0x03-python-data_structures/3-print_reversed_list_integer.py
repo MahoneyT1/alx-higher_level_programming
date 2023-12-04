@@ -8,4 +8,4 @@ def print_reversed_list_integer(my_list=[]):
         rl.append(my_list[i])
 
     for i in rl:
-        print("{}".format(i))
+        print("{:d}".format(i))
