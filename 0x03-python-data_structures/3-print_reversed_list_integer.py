@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def print_reversed_list_integer(my_list=[]):
-    """ Function that prints array of int backwards """
     newList = []
     newList = my_list
 
