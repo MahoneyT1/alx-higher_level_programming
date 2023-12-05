@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    # Loop through the first list
+
     if not matrix:
         print()
 
     else:
-        for i in range(len(matrix)):
-            for j in range(0, len(matrix[i])):
-                print("{:d}".format(matrix[i][j]), end=" " if j != len(matrix[i]) -1 else"")
-            print()
+        for row in range(len(matrix)):
+            for col in range(len(matrix[row])):
+                print("{}".format(matrix[row][col]), end=" "\
+                        if col != len(matrix[row]) - 1 \
+                        else "\n")
+        print()
