@@ -2,13 +2,8 @@
 
 def print_matrix_integer(matrix=[[]]):
     # Loop through the first list
-    for row in matrix:
 
-        # Loop through row in matrix:
-
-        for elem in row:
-            print("{:d}".format(elem), end=' ')
-
-        # Print space each time it loops
-
+    for i in range(len(matrix)):
+        for j in range(0, len(matrix[i])):
+            print("{}".format(matrix[i][j]), end=" " if j != len(matrix[i]) -1 else"")
         print()
