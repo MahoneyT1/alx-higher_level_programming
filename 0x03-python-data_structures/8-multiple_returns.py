@@ -3,10 +3,10 @@
 def multiple_returns(sentence):
     """ A function that returns both lengeth of a string and the first char """
 
-    length_of_string = len(sentence)
+    length = len(sentence)
 
-    if sentence == 0:
-        first_char is None
+    if length <= 0:
+        first_char == 0
         return first_char
 
     else:
@@ -14,4 +14,4 @@ def multiple_returns(sentence):
 
         for first in sentence:
             first_char = sentence[0]
-            return (length_of_string, first_char)
+            return (length, first_char)
