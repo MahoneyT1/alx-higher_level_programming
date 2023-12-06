@@ -3,13 +3,13 @@
 def multiple_returns(sentence):
     """ A function that returns both lengeth of a string and the first char """
 
-    length = len(sentence)
+    if not sentence:
+        sentence = None
+        return sentence
 
-    if length <= 0:
-        first_char == 0
-        return first_char
-
-    else:
+    if sentence:
+        length = len(sentence)
+        
         # use a for loop to check the first char of the string
 
         for first in sentence:
