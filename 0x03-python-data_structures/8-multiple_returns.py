@@ -5,14 +5,13 @@ def multiple_returns(sentence):
 
     length_of_string = len(sentence)
 
-    if length_of_string <= 0:
+    if sentence is None:
         first_char = None
-        return first
+        return first_char
 
     else:
         # use a for loop to check the first char of the string
 
         for first in sentence:
-            if first > 0:
-                first_char = sentence[0]
-                return (length_of_string, first_char)
+            first_char = sentence[0]
+            return (length_of_string, first_char)
