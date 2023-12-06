@@ -2,7 +2,7 @@
 
 def multiple_returns(sentence):
     """ A function that returns both lengeth of a string and the first char """
-    
+
     if not sentence:
         return None
 
