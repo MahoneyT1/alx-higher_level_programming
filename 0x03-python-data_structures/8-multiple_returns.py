@@ -10,8 +10,7 @@ def multiple_returns(sentence):
     if sentence:
         length = len(sentence)
 
-        # use a for loop to check the first char of the string
+    else:
+        length = 0
 
-        for first in sentence:
-            first_char = sentence[0]
-            return (length, first_char)
+    return(length, sentence if not sentence else sentence[0])
