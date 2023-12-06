@@ -5,8 +5,9 @@ def multiple_returns(sentence):
 
     length_of_string = len(sentence)
 
-    if length_of_string == 0:
-        return None
+    if length_of_string <= 0:
+        first == None
+        return first
 
     else:
         # use a for loop to check the first char of the string
