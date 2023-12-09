@@ -11,7 +11,7 @@ def multiply_by_2(a_dictionary):
         for k, v in a_dictionary.copy().items():
             new_dict[k] = v * 2
 
-         return new_dict
+    return new_dict
 
-     else:
-         return None
+     if not a_dictionary:
+         return a_dictionary
