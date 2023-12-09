@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
 def update_dictionary(a_dictionary, key, value):
-    key = str()
+    """ A function that replaces or adds key/value in a dictionary """
 
-    if key != str():
-        return True
+    if key in a_dictionary:
+        a_dictionary[key] = value
+        return a_dictionary
+
+    if key not in a_dictionary:
+        a_dictionary[key] = value
+        return a_dictionary
