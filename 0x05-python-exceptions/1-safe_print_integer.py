@@ -3,7 +3,9 @@
 def safe_print_integer(value):
     """ Write a function that prints an integer """
     try:
-        print("{:d}".format(value))
-        return True
+        if isinstance(value, int):
+            print("{:d}".format(value))
+            return True
+
     except TypeError:
-        return False
+            return False
