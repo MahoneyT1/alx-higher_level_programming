@@ -16,4 +16,4 @@ class Square:
             if size < 0:
                 raise ValueError
         except ValueError:
-            print("size must be >= 0")
+            raise ValueError("size must be >= 0")
