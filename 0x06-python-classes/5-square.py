@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ define a type class square """
 
 
@@ -8,11 +9,8 @@ class Square:
     def __init__(self, size=0):
         """ initializing a new obj with content of instance.
 
-
         args:
             size (int): size of square.
-            value : value to update the private attribute.
-
         """
         self.__size = size
 
@@ -43,7 +41,8 @@ class Square:
         """ function that prints square in char form """
 
         for i in range(self.__size):
-            print("#" * self.__size)
+            [print("#", end="") for j in range(self.__size)]
+            print("")
 
-        else:
-            print()
+        if self.__size == 0:
+            print("")
