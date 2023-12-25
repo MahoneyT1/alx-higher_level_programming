@@ -6,8 +6,15 @@ class Square:
     """ blue_print of type square """
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        """ initialing obj with attributes.
+
+        args:
+            size (int): size of square
+            position (int, int): new position.
+
+        """
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
