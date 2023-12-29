@@ -6,11 +6,8 @@ def safe_print_integer_err(value):
     """ a function that prints an integer """
 
     try:
-        if isinstance(value, int):
-            print("{:d}".format(value))
-            return True
-        else:
-            raise TypeError
-    except TypeError:
-        print("Exception: ", sys.stderr)
+        print("{:d}".format(value))
+        return True
+    except TypeError as e:
+        print("Exception: ", e)
         return False
