@@ -4,13 +4,15 @@ import sys
 
 
 def safe_print_integer_err(value):
-    """ a function that prints an integer """
+    """ a function that prints an integer only.
 
+    args:
+        value (int): expected parameter to be of int.
+    """
     try:
-        fv = "{:d}".format(value)
-        print(fv)
+        print("{:d}".format(value))
         return True
 
-    except Exception as e:
-        print(f"Exception:{e}", file=sys.stderr)
+    except Exception:
+        print("Exception: {}".format(sys.exc_infor()[1], file=sys.stderr))
         return False
