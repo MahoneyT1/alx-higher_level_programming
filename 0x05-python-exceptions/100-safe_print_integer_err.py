@@ -2,7 +2,6 @@
 import sys
 
 
-
 def safe_print_integer_err(value):
     """ a function that prints an integer only.
 
