@@ -8,7 +8,8 @@ def safe_print_integer_err(value):
     args:
         value (int): expected parameter to be of int.
 
-        returns: True if success else False
+    returns: 
+            True if success else False.
     """
     try:
         print("{:d}".format(value))
