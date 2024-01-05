@@ -35,6 +35,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """Function that setts or modify height."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -55,17 +56,15 @@ class Rectangle:
             return perimeter
 
     def __str__(self):
-        """Function that prints the representation.
-
-        Represent rectange with #.
-        """
-
+        """Function that prints the representation."""
         if self.__height == 0 or self.__width == 0:
             return ("")
 
         new_list = []
+
         for i in range(self.__height):
             [new_list.append("#") for j in range(self.__width)]
             if i != self.__height - 1:
                 new_list.append("\n")
+
         return("".join(new_list))
