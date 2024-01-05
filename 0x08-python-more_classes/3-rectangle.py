@@ -61,12 +61,12 @@ class Rectangle:
         Represents the rectangle with the # character.
         """
         if self.__height == 0 or self.__width == 0:
-            return("")
+            return('')
 
         new_list = []
         for i in range(self.__height):
-            [new_list.append("#") for j in range(self.__width)]
+            [new_list.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                new_list.append("\n")
+                new_list.append('\n')
 
-        return("".join(new_list))
+        return( ''.join(new_list))
