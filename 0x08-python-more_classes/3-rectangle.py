@@ -56,12 +56,14 @@ class Rectangle:
             return perimeter
 
     def __str__(self):
-        """Function that prints the representation."""
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
+        """
         if self.__height == 0 or self.__width == 0:
-            return ("")
+            return("")
 
         new_list = []
-
         for i in range(self.__height):
             [new_list.append("#") for j in range(self.__width)]
             if i != self.__height - 1:
