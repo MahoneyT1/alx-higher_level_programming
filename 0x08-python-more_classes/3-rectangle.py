@@ -55,7 +55,7 @@ class Rectangle:
             perimeter = 2 * (self.__height + self.__width)
             return perimeter
 
-    def __str__(self):
+    def __str__(self)-> str:
         """Return the printable representation of the Rectangle.
 
         Represents the rectangle with the # character.
