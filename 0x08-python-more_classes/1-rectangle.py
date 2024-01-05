@@ -27,7 +27,7 @@ class Rectangle:
         """ func that sets or modify width """
 
         if isinstance(value, int):
-            if self.__width < 0:
+            if value < 0:
                 raise ValueError("height must be >= 0")
             self.__width = value
         else:
@@ -43,7 +43,7 @@ class Rectangle:
         """ func that sets or modify height """
 
         if isinstance(value, int):
-            if self.__height < 0:
+            if value < 0:
                 raise ValueError("height must be >= 0")
             self.__height = value
         else:
