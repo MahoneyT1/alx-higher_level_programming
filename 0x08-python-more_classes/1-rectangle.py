@@ -19,7 +19,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ func that gets or returns height attribute """
+        """ func that gets or returns width attribute """
         return self.__width
 
     @width.setter
@@ -27,11 +27,12 @@ class Rectangle:
         """ func that sets or modify width """
 
         if isinstance(value, int):
-            if value < 0:
-                raise ValueError("height must be >= 0")
-            self.__width = value
+            if value >= 0:
+                self.__width = value
+            else:
+                raise ValueError("must be >= 0")
         else:
-            raise TypeError("message width must be an integer")
+            raise ValueError("width must be an integer")
 
     @property
     def height(self):
@@ -43,8 +44,9 @@ class Rectangle:
         """ func that sets or modify height """
 
         if isinstance(value, int):
-            if value < 0:
+            if value >= 0:
+                self.__height = value
+            else:
                 raise ValueError("height must be >= 0")
-            self.__height = value
         else:
             raise TypeError("message width must be an integer")
