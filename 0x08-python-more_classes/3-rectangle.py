@@ -55,18 +55,17 @@ class Rectangle:
             perimeter = 2 * (self.__height + self.__width)
             return perimeter
 
-    def __str__(self)-> str:
+    def __str__(self):
         """Return the printable representation of the Rectangle.
 
         Represents the rectangle with the # character.
         """
-        if self.__height == 0 or self.__width == 0:
-            return('')
+        if self.__width == 0 or self.__height == 0:
+            return ("")
 
-        new_list = []
+        rect = []
         for i in range(self.__height):
-            [new_list.append('#') for j in range(self.__width)]
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                new_list.append('\n')
-
-        return( ''.join(new_list))
+                rect.append("\n")
+        return ("".join(rect))
