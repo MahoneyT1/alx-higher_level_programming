@@ -13,16 +13,15 @@ class Rectangle(BaseGeometry):
             width (int): param 1
             height (int): param 2
         """
-        self.integer_validator("width", width)
+        super().integer_validator("width", width)
         self.__width = width
-        self.integer_validator("height", height)
+        super().integer_validator("height", height)
         self.__height = height
 
     def area(self):
         """Method that cal the Area of a rectangle"""
 
-        self.area = self.__width * self.__height
-        return self.area
+        return self.__width * self.__height
 
     def __str__(self):
         mystring + "[" + str(self.__class__.__name__) + "] "
