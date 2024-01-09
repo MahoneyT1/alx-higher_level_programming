@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+"""A class BaseGeometry"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+class Rectangle(BaseGeometry):
+    """Representation of both Rectangle and BaseGeometry"""
+
+    def __init__(self, width, height):
+        """Initilization of obj with attributes.
+
+        Args:
+            width (int): param 1
+            height (int): param 2
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
+
+    def area(self):
+        """Method that cal the Area of a rectangle"""
+
+        self.area = self.__width * self.__height
+        return self.area
+
+    def __str__(self):
+        return f"[Rectangle] {self.__width} / {self.__height}"
