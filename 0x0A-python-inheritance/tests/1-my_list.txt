@@ -1,0 +1,100 @@
+Tests for 1-my_list.py
+----------------------
+case 0: import
+>>> MyList = import__(1-my_list.py).MyList
+>>>
+------------------------------------------
+
+case 1: common case
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>>my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>>
+------------------------------------------
+
+case 2: not defined object
+
+>>> MyList = import__('1-my_list').MyList
+>> MyList2.print_sorted()
+Traceback(most recent call last)
+NameError: 'MyList2' is not defined
+>>>
+
+------------------------------------------
+
+case 3: passed a list
+
+>>> another_l = [4, 1, 9]
+>>> new_l = MyList(another_l)
+>>> new_l.print_sorted()
+[1, 4, 9]
+>>>
+
+-----------------------------------------
+
+case 4: empty list
+
+>>> a = []
+>>> b = MyList(a)
+>>> b.print_sorted()
+[]
+>>>
+
+-----------------------------------------
+
+case 5: unique number
+
+my_list = [1]
+my_list.print_sorted()
+[1]
+print(my_list)
+[1]
+>>>
+
+-----------------------------------------
+
+case 6: same number
+
+>>> myList = MyList()
+>>> myList.append(1)
+>>> myList.append(1)
+>>> myList.append(1)
+>>> myList.append(1)
+>>> myList.print_sorted()
+[1, 1, 1, 1]
+>>>
+
+-----------------------------------------
+case 7: no parent object
+
+>>> mylist = [1, 2, 3, 4]
+>>> mylist.print_sorted()
+Traceback (most recent call last):
+AttirbuteError: 'mylist' object has no attribute 'print_sorted'
+>>>
+
+-----------------------------------------
+
+case 8: megative number
+
+>>> mylist = MyList()
+>>> mylist.append(5)
+>>> mylist.append(4)
+>>> mylist.append(-1)
+>>> mylist.append(-9)
+>>> mylist.append(2)
+>>> mylist.print_sorted()
+[-9,-1,2,4,5]
+>>>
+
+
+
