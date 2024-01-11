@@ -3,4 +3,4 @@
 with simple data structure.
 """
 def class_to_json(obj):
-    return obj.__doc__
+    return obj.__dict__
