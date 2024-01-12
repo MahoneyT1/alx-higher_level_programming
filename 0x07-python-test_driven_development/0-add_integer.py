@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-define a function that adds two int
+Function that adds two integers/float numbers.
+prototype: def add_integer(a, b=98):
+Returns an integer: the addition of a and b
 """
 
 
