@@ -21,7 +21,24 @@ case 3: provided one arg, add together with a default arg
 >>>
 ---------------------------------------------------------
 case 4: adding a float with a negative number
----------------------------------------------------------
+--------------------------------------------------------
 >>> add_integer(100.3, -2)
 98
 >>>
+---------------------------------------------------------
+case 5: adding an int with a string
+---------------------------------------------------------
+>>> print(add_integer(4, "School"))
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> 
+---------------------------------------------------------
+case 6: passing none to the add_integer
+---------------------------------------------------------
+>>> print(add_integer(None))
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>>
+--------------------------------------------------------
