@@ -6,16 +6,14 @@ define a function that adds two int
 """
 
 def add_integer(a, b=98):
-
-    """ function that adds two integers.
-
-    args:
-        a (int or float): parameter 1.
-        b (int or float) - optional: parameter 2.
-
-    raise exception:
-        if typeError or valueError.
-
+    """Addition function of two integers.
+    Args:
+        a (int or float): The first number to be added.
+        b (int or float, optional): Second number to be added. Defaults to 98.
+    Raises:
+        TypeError: If either `a` or `b` is not an integer or float.
+    Returns:
+        int: The addition of `a` and `b` as an integer.
     """
     sum = 0
 
