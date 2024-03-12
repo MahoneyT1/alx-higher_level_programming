@@ -7,11 +7,11 @@ const secondLine = 'python is cool';
 const thirdLine = 'JavaScript is amazing';
 
 const myList = [
-  firstLine,
-  secondLine,
-  thirdLine
+  'C is fun',
+  'python is cool',
+  'JavaScript is amazing'
 ];
 
-for (let i = 0; i <= myList.length - 1; i++) {
+for (let i = 0; i <= myList.length; i++) {
   console.log(myList[i]);
 }
