@@ -4,7 +4,7 @@
 
 const myList = [
   'C is fun',
-  'python is cool',
+  'Python is cool',
   'JavaScript is amazing'
 ];
 
