@@ -12,6 +12,6 @@ const myList = [
   'JavaScript is amazing'
 ];
 
-for (let i = 0; i <= myList.length; i++) {
+for (let i = 0; i < myList.length; i++) {
   console.log(myList[i]);
 }
