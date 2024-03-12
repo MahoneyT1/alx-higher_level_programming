@@ -7,7 +7,7 @@ const args = process.argv;
 
 if (!isNaN(args[2])) {
   const floorDiv = Math.floor(parseInt(args[2], 10));
-  console.log('My first number: ', floorDiv);
+  console.log('My number:', floorDiv);
 } else {
   console.log('Not a number');
 }
