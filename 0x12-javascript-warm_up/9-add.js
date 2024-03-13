@@ -10,7 +10,7 @@ if ((!isNaN(arg1) || !isNaN(arg2)) &&
   const sum = add(first, second);
   console.log(sum);
 } else {
-  console.log(NaN);
+  console.log('NaN');
 }
 function add (a, b) {
   return a + b;
