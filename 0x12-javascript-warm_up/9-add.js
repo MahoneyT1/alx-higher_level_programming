@@ -6,8 +6,8 @@ const first = parseInt(com[2]);
 const second = parseInt(com[3]);
 
 function add(a, b) {
-    if ((a === NaN) || (b === NaN)) {
-      return;
+    if ((isNaN(a) || (isNaN(b)) {
+      return NaN;
     }
     return a + b;
 }
