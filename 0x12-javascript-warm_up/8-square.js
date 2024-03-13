@@ -1,5 +1,4 @@
 #!/usr/bin/node
-// Write a script that prints a square.
 
 const first = process.argv[2];
 const result = parseInt(first, 10);
@@ -8,12 +7,13 @@ const result = parseInt(first, 10);
 if (isNaN(result)) {
   console.log('Missing size');
 } else {
-  // loop along the length passed
-  let i = 0;
-  while (i < result) {
-    // print x, using repeat function log (passed value) on
-    // the same line, making it look like 2D array
-    console.log('x'.repeat(result));
-    i++;
+  for (let i = 0; i < result; i++) {
+    // create a string to contain your concat strings
+    let ask = '';
+
+    for (let j = 0; j < result; j++) {
+      ask += 'x' + ' ';
+    }
+    console.log(ask.trim());
   }
 }
