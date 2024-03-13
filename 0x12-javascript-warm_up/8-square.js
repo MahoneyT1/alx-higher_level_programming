@@ -6,11 +6,12 @@ const arg = process.argv;
 if (isNaN(arg[2])) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i <= arg.length; i++) {
-    let strCon = '';
-    for (let j = 0; j <= arg.length; j++) {
-      strCon += 'x' + ' ';
+  const counter = parseInt(arg[2], 10);
+  for (let i = 0; i < counter; i++) {
+    let check = '';
+    for (let j = 0; j < counter; j++) {
+      check += 'x' + '';
     }
-    console.log(strCon);
+    console.log(check);
   }
 }
