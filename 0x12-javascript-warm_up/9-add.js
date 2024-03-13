@@ -1,18 +1,19 @@
 #!/usr/bin/node
 
-const com = process.argv;
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
 
-if (com.length < 4) {
-  console.log(NaN);
-}
-const first = parseInt(com[2], 10);
-const second = parseInt(com[3], 10);
+if (!isNaN(arg1) || !isNaN(arg2)) {
+    const first = parseInt(arg1, 10);
+    const second = parseInt(arg2, 10);
 
-function add (a, b) {
-  if (isNaN(a) === true || isNaN(b) === true) {
-    return NaN;
-  } 
-   return a + b;
+    let sum = add(first, second);
+    console.log(sum);
+
+} else {
+    console.log(NaN)
 }
-const sum = add(first, second);
-console.log(sum);
+
+function add(a, b) {
+    return a + b;
+}
