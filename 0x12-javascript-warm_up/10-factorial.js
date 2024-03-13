@@ -5,7 +5,7 @@ function factorial (n) {
     return 1;
   } else if (isNaN(n) || n <= 1 || !Number.isInteger(n)) {
     return 1;
-  } else if (!isNaN(n) || n > 1 || Number.isInteger(n)) {
+  } else if (!isNaN(n) || n >= 1 || Number.isInteger(n)) {
     return n * factorial(n - 1);
   }
 }
