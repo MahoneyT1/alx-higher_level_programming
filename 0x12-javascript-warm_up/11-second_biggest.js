@@ -1,6 +1,10 @@
 #!/usr/bin/node
 
-if (process.length <= 3) {
+const arg = process.argv;
+
+if (arg.length === 2) {
+  console.log(0);
+} else if (arg.length === 3) {
   console.log(0);
 } else {
   const newL = Array.from(new Set(process.argv.slice(2)));
