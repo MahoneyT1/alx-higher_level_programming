@@ -6,13 +6,12 @@ class Rectangle {
       this.width = w;
       this.height = h;
     } else {
-      this.width = 0;
-      this.width = 0;
+      return {};
     }
   }
 
   print () {
-    if (this.width !== 0 && this.height !== 0) {
+    if (this.width && this.height) {
       for (let i = 0; i < this.height; i++) {
         for (let j = 0; j < this.width; j++) {
           process.stdout.write('x');
