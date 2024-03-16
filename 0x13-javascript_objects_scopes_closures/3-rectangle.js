@@ -12,13 +12,15 @@ class Rectangle {
 
   print () {
     if (this.width && this.height) {
+      let newStr;
       for (let i = 0; i < this.height; i++) {
+        newStr = '';
         for (let j = 0; j < this.width; j++) {
-          process.stdout.write('x');
+          newStr += 'x';
         }
-        console.log();
+        console.log(newStr);
       }
     }
   }
-};
+}
 module.exports = Rectangle;
