@@ -20,13 +20,13 @@ module.exports = class Rectangle {
   }
 
   rotate () {
-    const temp = this.height;
-    this.height = this.width;
-    this.width = temp;
+    const temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   }
 
   double () {
-    this.height *= 2;
     this.width *= 2;
+    this.height *= 2;
   }
 };
