@@ -15,10 +15,11 @@ if __name__ == '__main__':
 
     mycursor = db.cursor()
 
-    mycursor.execute("SELECT id, name FROM states ORDER BY id ASC ")
+    mycursor.execute("SELECT * FROM states")
+    rows = mycursor.fetchall()
 
-    for i in mycursor:
-        print(i)
+    for row in rows:
+        print(row)
 
     mycursor.close()
     db.close()
