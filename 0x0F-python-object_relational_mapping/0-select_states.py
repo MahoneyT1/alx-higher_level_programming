@@ -19,3 +19,6 @@ if __name__ == '__main__':
 
     for i in mycursor:
         print(i)
+
+    mycursor.close()
+    db.close()
