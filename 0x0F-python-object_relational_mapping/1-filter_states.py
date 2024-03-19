@@ -14,7 +14,6 @@ import MySQLdb
 from sys import argv
 
 if __name__ == '__main__':
-
     # connect to the database
     db = MySQLdb.connect(
             host='localhost',
@@ -28,15 +27,16 @@ if __name__ == '__main__':
 
     # fetch data from data-base by name starting with N
 
-    mycursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%'
+    mycursor.execute("SELECT id, name FROM states WHERE name LIKE 'N%'\
                      ORDER BY id ASC")
+
     # print the roles
 
     states = mycursor.fetchall()
 
     for state in states:
         if state[1][0] == 'N':
-            print(row)
+            print(state)
 
     # close database and cursor
 
