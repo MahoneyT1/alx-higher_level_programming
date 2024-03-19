@@ -4,8 +4,6 @@
 import MySQLdb
 from sys import argv
 
-
-
 if __name__ == '__main__':
     # establishing a secure connection to the MySQL server
     db = MySQLdb.connect(
