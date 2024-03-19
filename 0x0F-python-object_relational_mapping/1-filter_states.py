@@ -32,10 +32,11 @@ if __name__ == '__main__':
                      ORDER BY id ASC")
     # print the roles
 
-    rows = mycursor.fetchall()
+    states = mycursor.fetchall()
 
-    for row in rows:
-        print(row)
+    for state in states:
+        if state[1][0] == 'N':
+            print(row)
 
     # close database and cursor
 
