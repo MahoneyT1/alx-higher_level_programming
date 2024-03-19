@@ -1,5 +1,16 @@
 #!/usr/bin/python3
-"""A script that lists all states with a name starting with N (upper N)"""
+"""A script that lists all states with a name starting with N (upper N)
+args:
+    host: default variable host name
+    user: username
+    port: para4 port num
+    passwd: password
+    db: databae.
+
+function:
+    it connects with the database, and list all the
+
+"""
 
 import MySQLdb
 from sys import argv
