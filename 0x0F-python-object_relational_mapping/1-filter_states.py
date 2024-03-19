@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""A script that lists all states with a name starting with N (upper N)
-args:
-    host: default variable host name
-    user: username
-    port: para4 port num
-    passwd: password
-    db: databae.
 
-function:
-    it connects with the database, and list all the
-
+"""
+Script that lists all states with a name starting with 'N'
+from the database hbtn_0e_0_usa.
+Parameters for script: mysql username, mysql password, database name.
+Must use the `MySQLdb` module.
+Script should connect to a MySQL server runnimg on `localhost` at port `3306`
+Results must be in ascending order by `states.id`.
+Code should not be executed when imported.
 """
 
 import MySQLdb
