@@ -15,36 +15,37 @@ Code should not be executed when imported.
 import MySQLdb
 from sys import argv
 
-# connect to the database
-db = MySQLdb.connect(
-        host='localhost',
-        port=3306,
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3]
-        )
+if __name__ == '__main__':
+    # connect to the database
+    db = MySQLdb.connect(
+            host='localhost',
+            port=3306,
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3]
+            )
 
-# get a cursor, a reference for executing queries, objectify it
-cursor = db.cursor()
+    # get a cursor, a reference for executing queries, objectify it
+    cursor = db.cursor()
 
-# safefly capture stateName arg
-state_name = argv[4]
+    # safefly capture stateName arg
+    state_name = argv[4]
 
-# store querry in a var
-querry = f"SELECT * FROM states WHERE name = %s ORDER BY id ASC"
+    # store querry in a var
+    querry = f"SELECT * FROM states WHERE name = %s ORDER BY id ASC"
 
-# execute the querry
-cursor.execute(querry, (state_name,))
+    # execute the querry
+    cursor.execute(querry, (state_name,))
 
-# fetch the datas in list form
-states = cursor.fetchall()
+    # fetch the datas in list form
+    states = cursor.fetchall()
 
-# loop through and print
+    # loop through and print
 
-for state in states:
-    print(state)
+    for state in states:
+        print(state)
 
-# close the cursor and db
+    # close the cursor and db
 
-cursor.close()
-db.close()
+    cursor.close()
+    db.close()
