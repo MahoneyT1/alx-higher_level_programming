@@ -35,7 +35,8 @@ if __name__ == '__main__':
 
     # loop through and print the datas
     for state in states:
-        print(state)
+        if state[1] == state_name:
+            print(state)
 
     # successfully done now close the cursor and db
 
