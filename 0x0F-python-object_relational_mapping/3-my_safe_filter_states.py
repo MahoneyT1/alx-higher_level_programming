@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 """ write a script that takes in arguments and displays all values in the
 states table of hbtn_0e_0_usa where name matches the argument. But this
-time, write one that is safe from MySQL injections
+time, write one that is safe from MySQL injections.
+
+This scripts need some parameters to be able connnect to database
+para1  -- local host, param 2 port, db name and username
+
 
 """
 
