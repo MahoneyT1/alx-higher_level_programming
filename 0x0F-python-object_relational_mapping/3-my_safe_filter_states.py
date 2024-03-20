@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-""" write a script that takes in arguments and displays all values in the
-states table of `hbtn_0e_0_usa` where name matches the argument. But this
-time, write one that is safe from `MySQL` injections.
 
-This scripts need some parameters to be able connnect to database
-para1  -- `localhost`, param 2 `port`, `db` name and username
-
-
+"""
+Script that displays all values in the states table of hbtn_0e_0_usa
+where name matches the provided argument, and is AFE from MySQL injection.
+Parameters for script: mysql username, mysql password, database name
+and state name searched.
+Must use the `MySQLdb` module.
+Script should connect to a MySQL server runnimg on `localhost` at port `3306`
+Must use `format` to create the SQL query with the user input.
+Results must be in ascending order by `states.id`.
+Code should not be executed when imported.
 """
 
 import MySQLdb
 from sys import argv
-
 
 # connect to the database
 db = MySQLdb.connect(
