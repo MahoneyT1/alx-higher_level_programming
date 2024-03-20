@@ -42,8 +42,7 @@ states = cursor.fetchall()
 # loop through and print
 
 for state in states:
-    if state[1] == argv[4]:
-        print(state)
+    print(state)
 
 # close the cursor and db
 
