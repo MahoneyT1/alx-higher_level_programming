@@ -31,7 +31,7 @@ cursor = db.cursor()
 state_name = argv[4]
 
 # store querry in a var
-querry = f"SELECT * FROM states WHERE name = %s "
+querry = f"SELECT * FROM states WHERE name = %s ORDER BY id ASC"
 
 # execute the querry
 cursor.execute(querry, (state_name,))
