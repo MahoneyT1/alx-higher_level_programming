@@ -21,6 +21,8 @@ if __name__ == '__main__':
     cursor = db.cursor()
 
     # saving last argv to a var
+
+    state_name = (),
     state_name = argv[4]
 
     # create a query
