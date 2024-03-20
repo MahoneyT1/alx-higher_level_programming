@@ -24,10 +24,10 @@ if __name__ == '__main__':
     state_name = argv[4]
 
     # create a query
-    query = f"SELECT id, name FROM states WHERE name = %s ORDER BY id ASC"
+    query = "SELECT id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
 
     # execute the command using the cursor as a reference to the database
-    cursor.execute(query, (state_name,))
+    cursor.execute(query)
 
     # fetch all the data
     states = cursor.fetchall()
