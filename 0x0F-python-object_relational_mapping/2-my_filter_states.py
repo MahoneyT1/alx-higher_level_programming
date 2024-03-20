@@ -22,11 +22,10 @@ if __name__ == '__main__':
 
     # saving last argv to a var
 
-    state_name = (),
     state_name = argv[4]
 
     # create a query
-    query = "SELECT id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+    query = "SELECT id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4])
 
     # execute the command using the cursor as a reference to the database
     cursor.execute(query)
