@@ -29,18 +29,22 @@ if __name__ == '__main__':
     state_name = argv[4]
 
     querry = """
-             SELECT states.id, cities.name
-             from cities
-             INNER JOIN states ON states.id = cities.state_id
-             WHERE states.name = '%s' """
+             SELECT cities.name
+             from states
+             INNER JOIN cities ON states.id = cities.state_id
+             WHERE states.name = %s
+             ORDER BY cities.id ASC
+
+             """
     # execute the querry
     cursor.execute(querry, (state_name,))
 
     # fetch the data returned
+
     results = cursor.fetchall()
 
-    for result in results:
-        print(result)
+    newS = [result[0] for result in results]
+    print(', '.join(newS))
 
     # close the cursor and the db
     cursor.close()
