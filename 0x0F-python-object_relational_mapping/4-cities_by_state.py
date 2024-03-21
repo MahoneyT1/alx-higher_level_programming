@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""
-This script is for listing all cities from the database `hbtn_0e_4_usa`
-It takes only 3 arguments which are `username` `password` `database`
 
-It connects to mysql using `hostname` and `port` in other to connect and
-list the `states`
 """
+Script that lists all cities from the database hbtn_0e_4_usa.
+Parameters for script: mysql username, mysql password, database name.
+Must use the `MySQLdb` module.
+Script should connect to a MySQL server runnimg on `localhost` at port `3306`
+Results must be in ascending order by `cities.id`.
+Can only use `execute()` once
+Code should not be executed when imported.
+"""
+
 import MySQLdb
 from sys import argv
 
