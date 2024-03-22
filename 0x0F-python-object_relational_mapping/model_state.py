@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 """
 Write a python file that contains the class definition of a State
 and an instance
@@ -14,11 +13,15 @@ must `import MySQLAlchemy`
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine, Column, Integer, String
 from sys import argv
+import sqlalchemy
 
-Base = declarative_base()
+metadata = sqlalchemy.MetaData()
+
+Base = declarative_base(metadata=metadata)
 
 
 class State(Base):
+    """ creating the structure of our table, State inheriting from base """
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True,
