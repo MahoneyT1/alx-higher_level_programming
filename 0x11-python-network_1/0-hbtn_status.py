@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 
-"""
-A python script that fetches https:alx-intranet.hbtn.io/status
-uses package urllib
-only import urllib
-"""
+""" A python script that fetches https:alx-intranet.hbtn.io/status """
 
 if __name__ == '__main__':
 
