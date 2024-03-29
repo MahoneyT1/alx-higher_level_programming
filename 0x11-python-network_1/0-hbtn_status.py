@@ -2,6 +2,8 @@
 """ A python script that fetches https:alx-intranet.hbtn.io/status """
 import urllib.request
 
+
+
 if __name__ == '__main__':
     custom_request = urllib.request.Request(
             'https://alx-intranet.hbtn.io/status')
