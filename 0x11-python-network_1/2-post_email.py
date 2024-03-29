@@ -20,6 +20,9 @@ if __name__ == "__main__":
     # encoding it with utf-8
     data = data.encode('utf-8')
 
+    # objectify the url and the params
+    req = urllib.request.Request(url, params=data)
+
     # open the url and decode the response
-    with urllib.request.urlopen(url, data=data) as response:
+    with urllib.request.urlopen(req) as response:
         print(response.read().decode('utf-8'))
