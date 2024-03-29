@@ -21,7 +21,7 @@ if __name__ == "__main__":
     data = data.encode('utf-8')
 
     # objectify the url and the params
-    req = urllib.request.Request(url, params=data)
+    req = urllib.request.Request(url, params=data, method='post')
 
     # open the url and decode the response
     with urllib.request.urlopen(req) as response:
