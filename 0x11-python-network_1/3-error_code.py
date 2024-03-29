@@ -7,11 +7,10 @@ to the URL and displays the body of the response
 
 import urllib.request
 from sys import argv
-from urllib.error import URLError, HTTPError
+import  urllib.error
 
 if __name__ == "__main__":
     url = argv[1]
-    req = urllib.request.Request(url)
     try:
         with urllib.request.urlopen(req) as response:
             print(response.read().decode('utf-8'))
