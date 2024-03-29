@@ -10,8 +10,9 @@ if __name__ == '__main__':
 
     import urllib.request
 
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status')
-    as response:
+    custom_request = urllib.request.Request('https://alx-intranet.hbtn.io/status')
+
+    with urllib.request.urlopen(custom_request) as response:
         data = response.read()
 
     print('Body response:$')
