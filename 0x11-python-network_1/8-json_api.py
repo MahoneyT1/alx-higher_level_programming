@@ -21,16 +21,17 @@ if __name__ == '__main__':
         q = ""
     else:
         q = argv[1]
+
     url = 'http://0.0.0.0:5000/search_user'
     q = {'q': q}
 
     try:
         resp = requests.post(url, data=q)
 
-        resp = resp.json()
+        data = resp.json()
 
-        if resp:
-            print("[{}] {}".format(resp['id'], resp['name']))
+        if data:
+            print("[{}] {}".format(data['id'], data['name']))
         else:
             print("No Result")
     except ValueError:
