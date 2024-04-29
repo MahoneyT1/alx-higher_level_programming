@@ -5,7 +5,7 @@
 // The content of the file must be written in utf-8
 // If an error occurred during while writing, print the error object
 
-async function writeToAFile (filePath, content) {
+function writeToAFile (filePath, content) {
   const fs = require('node:fs');
   fs.writeFile(filePath, content, 'utf-8', (error) => {
     if (error) {
