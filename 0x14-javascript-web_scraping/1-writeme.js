@@ -12,7 +12,7 @@ function writeToAFile (filePath, content) {
       console.error({ error: error });
     }
   });
-};
+}
 // Access the commandline args
 const argvFilePath = process.argv[2];
 const argvContent = process.argv[3];
