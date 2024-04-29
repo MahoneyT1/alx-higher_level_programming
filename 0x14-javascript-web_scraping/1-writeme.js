@@ -9,7 +9,7 @@ function writeToAFile (filePath, content) {
   const fs = require('node:fs');
   fs.writeFile(filePath, content, 'utf-8', (error) => {
     if (error) {
-      console.log({ error: error });
+      console.error({ error: error });
     }
   });
 };
