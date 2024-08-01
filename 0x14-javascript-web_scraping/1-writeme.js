@@ -15,7 +15,6 @@ const filePath = process.argv[2];
 async function writeToFile (filePath, stringArg) {
   try {
     await fs.writeFile(filePath, stringArg, 'utf-8');
-    console.log('sucessfully written to file');
   } catch (error) {
     console.error(error);
   }
