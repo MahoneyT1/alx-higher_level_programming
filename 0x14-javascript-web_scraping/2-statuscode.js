@@ -10,10 +10,8 @@
 const request = require('request');
 const url = process.argv[2];
 
-// A function that displays the status code of
-// a get request
 function getStatusCode (url) {
-  request.get(url, (error, response, body) => {
+  request.get(url, (error, response) => {
     if (error) {
       console.error(error);
     } else {
